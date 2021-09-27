@@ -20,6 +20,12 @@ __fast_alias_tips_preexec() {
         return
     fi
 
+    if [[ -v FAST_ALIAS_TIPS_EXCLUDE ]]; then
+      if (( $FAST_ALIAS_TIPS_EXCLUDE[(Ie)$suggested_first] )); then
+        return
+      fi
+    fi
+
     echo "${FAST_ALIAS_TIPS_PREFIX}${suggested}${FAST_ALIAS_TIPS_SUFFIX}"
 }
 

@@ -36,7 +36,8 @@ zplug sei40kr/zsh-fast-alias-tips
 
 ## Customization
 
-| Variable                 | Default value       | Description           |
-| :--                      | :--                 | :--                   |
-| `FAST_ALIAS_TIPS_PREFIX` | `"💡 $(tput bold)"` | The prefix of the Tips |
-| `FAST_ALIAS_TIPS_SUFFIX` | `"$(tput sgr0)"`    | The suffix of the Tips |
+| Variable                  | Default value       | Description           |
+| :--                       | :--                 | :--                   |
+| `FAST_ALIAS_TIPS_PREFIX`  | `"💡 $(tput bold)"` | The prefix of the Tips |
+| `FAST_ALIAS_TIPS_SUFFIX`  | `"$(tput sgr0)"`    | The suffix of the Tips |
+| 'FAST_ALIAS_TIPS_EXCLUDE' | undefined           | Array of aliases to never suggest |
